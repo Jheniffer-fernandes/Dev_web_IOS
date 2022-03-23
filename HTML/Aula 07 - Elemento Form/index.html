@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Aula 07 - Elemento form</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2>Elementos de Formulário</h2>
+            <ul>
+                <li><a href="">input e label</a></li>
+                <li><a href="">checkbox e radio</a></li>
+                <li><a href="">select e datalist</a></li>
+                <li><a href="">textarea</a></li>
+                <li><a href="">fieldset e legend</a></li>
+                <li><a href="">Atributo action do elemento form e elemento output</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Texto poético e um tipo de carne</legend>
+            <p>É sobre isso e está tudo bem!!</p>
+
+            <form method="post" action="jheniffer.fernandesm@gmail.com" name="Churrasco">
+                <label for="cTipoCarne">Tipos de Carne</label>
+                <input required="required" type="text" id="cTipoCarne">
+                <!--O c não é obrigatório, pode ser alterada por qualquer outra letra-->
+                
+                        <!--Radio-->
+                        <p>Qual sua cor preferida?</p>
+                        <input type="radio" name="cor" id="I">
+                        <!--Qualquer nome pode ser usado(melhor ainda se for intuitivo) o name é importante para o radio para dizer que todos os inputs são do mesmo conjunto-->
+                        <label for="I">Amarelo</label> <br>
+                        <input type="radio" name="cor" id="C">
+                        <label for="C">Azul</label> <br>
+                
+                        <!--Checkbox-->
+                        <p>Qual seu genêro musical preferido</p> <br>
+                        <input type="checkbox" id="Genêro1" name="Genêro1" value="Rock">
+                        <label for="Genêro1">Rock</label> <br>
+                        <input type="checkbox" name="Genêro2" id="Genêro2" value="Pop">
+                        <label for="Genêro2">POP</label> <br>
+                        <input type="checkbox" name="Genêro3" id="Genêro3" value="Indie">
+                        <label for="Genêro3">Indie</label> <br>
+                        <input type="checkbox" name="Genêro4" id="Genêro4" value="Samba">
+                        <label for="Genêro4">Samba</label> <br> <br>
+                
+                        <!--Select Lista Suspensa-->
+                        <label for="">Qual o melhor time</label>
+                        <!--Podia ser usado paragrafo ou um dos h's-->
+                        <select name="time" id="melhorTime">
+                            <option value="saoPaulo">São Paulo</option>
+                            <option value="palmeiras">Palmeiras</option>
+                            <option value="corinthians">Corinthians</option>
+                            <option value="santos">Santos</option>
+                        </select>
+                
+                
+                        <br> <br>
+                
+                        <!--Tipo Range-->
+                        0
+                        <input type="range" name="" id="">
+                        100
+                        <br> <br>
+                
+                        <!--Range com numeros embaixo-->
+                        1
+                        <input type="range" list="valor_01" min="1" max="10">
+                        10
+                        <datalist id="valor_01">
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                        </datalist>
+                        <br> <br>
+                
+                        <!--textarea-->
+                
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Deixe aqui seu Feedback"></textarea>
+                
+                        <!--Datalist lista pré definida-->
+                <input type="submit" name="Enviar">
+            </form>
+        </fieldset>
+
+
+    </main>
+</body>
+
+</html>
