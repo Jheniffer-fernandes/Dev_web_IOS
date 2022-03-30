@@ -1,0 +1,31 @@
+@charset "utf-8";
+body {
+ background-color: silver;  
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-weight: bold;
+ text-align: center
+}
+h1 {
+ background-color:#FEC8D8 ;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ text-shadow: 5px 5px 15px #957DAD;
+ line-height: 500%;
+ text-align: center
+}
+h2 {
+ background-color:#FEC8D8 ;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-align: center;
+}
+p {
+ font-size: 0.85em;
+ text-indent: 5em;
+ text-align: center;
+}
+footer {
+ background-color:#FEC8D8;   
+ font-family: 'Courier New', Courier, monospace;
+ font-size: 0.90em;
+ font-style: oblique;
+ text-align: center
+}

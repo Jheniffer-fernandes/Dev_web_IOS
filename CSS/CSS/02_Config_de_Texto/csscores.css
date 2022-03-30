@@ -1,0 +1,24 @@
+@charset "utf-8";
+body {
+ background-color: rgb(102, 151, 201);
+ color: rgb(93, 48, 61);
+ font-family: Arial, Verdana, sans-serif;
+}
+h1 {
+ background-color: silver;
+ color: white;
+ font-family: Georgia, "Times New Roman", serif;
+}
+h2 {
+ background-color: #abc;
+ color: #115;
+ font-family: Georgia, "Times New Roman", serif;
+}
+p {
+background-color:#DE3163 ;
+color:#CCCCFF ;  
+}
+footer {
+color: hsl(240, 100%, 99%) ; 
+font-family: 'Courier New', Courier, monospace;
+}
