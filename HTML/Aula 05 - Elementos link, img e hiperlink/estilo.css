@@ -1,7 +1,7 @@
 p{
-	color: green;
+	color: red;
 	font-size: 1.2em;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1{
 	font-family: sans-serif;
@@ -20,9 +20,15 @@ h3{
 	text-align: center;
 	background-color: #ff3030;
 }
-small{
-	color: blue;
-	font-size: 0.5em;
+h4{
+	font-family: 'Times New Roman', Times, serif;
+	color: silver;
 	text-align: center;
+	background-color: midnightblue;
+}
+footer{
+	color: black;
+	font-size: 0.50em;
+	text-align:center;
 	font-family: 'Courier New', Courier, monospace;
 }
