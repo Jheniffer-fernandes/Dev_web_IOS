@@ -19,13 +19,13 @@ body {
  border: 100px;
 }
 .btn {
-    background-color: #333;
-    color: #fff;
-    padding-top: 100px;
-    padding-right: 100pt;
-    padding-bottom: 100pt;
-    padding-left: 100pt;
-    border: 10px;
+    background-color: rgb(192, 181, 181);
+    color: rgb(88, 14, 14);
+    padding-top: 20px;
+    padding-right: 20pt;
+    padding-bottom: 20pt;
+    padding-left: 20pt;
+    border: 1000px;
 }
 a {
     text-decoration: double;
@@ -35,7 +35,7 @@ a {
     width: 95%;
     margin: 20px 30px;
 }
-#box {
+#box1{
     background-color: #333;
     color: #fff;
     border-right: 5px;
@@ -43,7 +43,7 @@ a {
     border-top: 5px;
     border-bottom: 5px;
     border-width: 3px;
-    border-bottom-width: 10px;
-    border-top-style:double;
-    padding: 20px;
+    border-bottom-width: 7px;
+    border-top-style:ridge;
+    padding: 2px;
 }
