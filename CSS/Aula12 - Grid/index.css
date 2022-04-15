@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: black;
+}
+
+.item-1 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.item-2 {
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+}
+
+.item-3 {
+    background-color: silver;
+    width: 200px;
+    height: 200px;
+}
