@@ -7,59 +7,96 @@
 </head>
 
 <body>
+    <h1 style="text-align: center;">Sweet and Love</h1>
     <main>
-        <form>
-            <label for="cnomeCompleto">Nome Completo:</label>
-            <input required="required" type="text" id="cnomeCompleto">
-            <label for="cIdade">Idade:</label>
-            <input required="required" type="number" id="cIdade">
-            <label for="cEmail">Email:</label>
-            <input required="required" type="text" id="cEmail">
+        <fieldset>
+            <legend>Experiência do Consumidor</legend>
+            <form method="post" action="jheniffer.fernandesm@gmail.com" name="sweetLove">
+                <label for="cnomeCompleto">Nome Completo:</label>
+                <input required="required" type="text" id="cnomeCompleto"> <br>
+                <label for="cIdade">Idade:</label>
+                <input required="required" type="number" min="1" id="cIdade"> <br>
+                <label for="cEmail">Email:</label>
+                <input required="required" type="text" id="cEmail">
 
-            <p>Você indicaria a loja a um amigo(a)</p>
-            <input type="radio" name="indicação" id="S">
-            <label for="S">Sim</label> <br>
-            <input type="radio" name="indicação" id="N">
-            <label for="N">Não</label> <br>
+                <p>Você indicaria a loja a um amigo(a)?</p>
+                <input type="radio" name="indicação" id="S">
+                <label for="S">Sim</label> <br>
+                <input type="radio" name="indicação" id="N">
+                <label for="N">Não</label> <br>
 
-            <p>O que você mais gostou na loja que visitou?</p> <br>
-            <input type="checkbox" id="Doce" name="Doce" value="Doces">
-            <label for="Doce">Doces</label> <br>
-            <input type="checkbox" name="Ambiente" id="Ambiente" value="Ambiente">
-            <label for="Ambiente">Ambiente</label> <br>
-            <input type="checkbox" name="Entrega" id="Entrega" value="Entrega">
-            <label for="Entrega">Entrega (se solicitado via aplicativo)</label> <br>
-            <input type="checkbox" name="Preço" id="Preço" value="Valores">
-            <label for="Preço">Valores</label> <br> <br>
+                <p>O que você mais gostou na loja que visitou?</p> <br>
+                <input type="checkbox" id="Doce" name="Doce" value="Doces">
+                <label for="Doce">Doces</label> <br>
+                <input type="checkbox" name="Ambiente" id="Ambiente" value="Ambiente">
+                <label for="Ambiente">Ambiente</label> <br>
+                <input type="checkbox" name="Entrega" id="Entrega" value="Entrega">
+                <label for="Entrega">Entrega (se solicitado via aplicativo)</label> <br>
+                <input type="checkbox" name="Preço" id="Preço" value="Valores">
+                <label for="Preço">Valores</label> <br> <br>
 
-            <p>Qual a sobremesa ou salgado você comprou na sua última vista?</p>
-            <!--Decidir como fazer essa parte-->
-            <!-- <li>Brigadeiro</li>
-        <li>Cocada</li>
-        <li>Bem casado</li>
-        <li>Beijinho</li>
-        <li>Olho de sogra</li>
-        <li>Cajuzinho</li>
-        <li>Brigadeiro</li>
-        <li>Cocada</li>
-        <li>Bem casado</li>
-        <li>Beijinho</li>
-        <li>Olho de sogra</li>
-        <li>Cajuzinho</li> opções-->
+                <p>Qual sobremesa e/ou salgado você comprou na sua última vista?</p>
+                <input type="checkbox" name="beijinho" id="beijinho" value="beijinho">
+                <label for="beijinho">Beijinho</label> <br>
+                <input type="checkbox" name="bemCasado" id="bemCasado" value="bemCasado">
+                <label for="bemCasado">Bem Casado</label> <br>
+                <input type="checkbox" id="brigadeiro" name="brigadeiro" value="brigadeiro">
+                <label for="brigadeiro">Brigadeiro</label> <br>
+                <input type="checkbox" name="cajuzinho" id="cajuzinho" value="cajuzinho">
+                <label for="cajuzinho">Cajuzinho</label> <br>
+                <input type="checkbox" name="cocada" id="cocada" value="cocada">
+                <label for="cocada">Cocada</label> <br>
+                <input type="checkbox" name="coxinha" id="coxinha" value="coxinha">
+                <label for="coxinha">Coxinha</label> <br>
+                <input type="checkbox" name="empanado" id="empanado" value="empanado">
+                <label for="empanado">Empanado de Presunto e Queijo</label> <br>
+                <input type="checkbox" name="olhoSogra" id="olhoSogra" value="olhoSogra">
+                <label for="olhoSogra">Olho de Sogra</label> <br>
+                <input type="checkbox" name="paoAlho" id="paoAlho" value="paoAlho">
+                <label for="paoAlho">Pão de Alho</label> <br>
+                <input type="checkbox" name="quibe" id="quibe" value="quibe">
+                <label for="quibe">Quibe</label> <br>
+                <input type="checkbox" name="salsichaAssada" id="salsichaAssada" value="salsichaAssada">
+                <label for="salsichaAssada">Salsicha Assada</label> <br> <br>
 
-            <p></p>
-            <label for="">Em qual loja você foi?</label>
-            <select name="loja" id="localização">
-                <option value="aclimação">Aclimação</option>
-                <option value="liberdade">Liberdade</option>
-                <option value="tatuape">Tatuapé</option>
-                <option value="saoJoaquim">São Joaquim</option>
-            </select>
 
+                <label for="localização">Em qual loja você fez essa compra?</label>
+                <select name="loja" id="localização">
+                    <option value="aclimação">Aclimação</option>
+                    <option value="liberdade">Liberdade</option>
+                    <option value="tatuape">Tatuapé</option>
+                    <option value="saoJoaquim">São Joaquim</option>
+                </select>
+                <br> <br>
 
-        </form>
-<!-- revisar as perguntas e as letras maiusculas e minusculas -->
+                <p>Avalie sua experiência:</p>
+                1
+                <input type="range" list="valor_01" min="1" max="10">
+                10
+                <datalist id="valor_01">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+                <br> <br>
+
+                <textarea name="Feedback" id="" cols="30" rows="10" placeholder="Feedback"></textarea>
+
+                <input type="submit" name="Enviar">
+
+            </form>
+        </fieldset>
     </main>
+    <footer>
+        <p style="text-align: center;">Sweet and Love | Copyright &copy; 2022 | Jheniffer</p>
+    </footer>
 </body>
 
 </html>
