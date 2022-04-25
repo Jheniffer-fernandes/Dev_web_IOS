@@ -1,6 +1,6 @@
 body {
     background-color: #E39DB0;
-    color: white;
+    color: rgb(10, 10, 10);
     font-family: Arial, Verdana, sans-serif;
 }
 
@@ -27,7 +27,7 @@ p {
 }
 
 h2.fundo {
-    background-color: #7B60BD;
+    background-color: #91c1ee;
 }
 
 footer.fundo {

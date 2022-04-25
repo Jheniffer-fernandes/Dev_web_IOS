@@ -1,78 +1,72 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <title>Document</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário do TI</title>
     <link rel="stylesheet" href="Estilo02.css">
 </head>
-<!--Olhar e ver o que precisa mudar, mudar o css-->
+
 <body>
-    <header>
-        <section id="menu">
-            <img src="https://ios.org.br/wp-content/uploads/2021/01/logo-istituto-oportunidade-social.svg">
+    <div>
+        <header>
+            <div>
+                <img src="notebook.jpg" alt="">
+            </div>
 
             <nav>
-                <a href="">Home</a>
-                <a href="">Contato</a>
-                <a href="">Registro</a>
+                <a href="#">Home</a>
+                <a href="#">Contato</a>
+                <a href="#">Registro</a>
             </nav>
-        </section>
-    </header>
+        </header>
 
-    <main>
-        <section id="info">
-            <h1>Prontuário da TI</h1>
+        <main>
+            <h2>Prontuário do TI</h2>
 
             <ol>
-                <li>Fechar Contrato</li>
-                <li>Análise de Sistemas</li>
-
-                <ol>
-                    <li>Avaliação da Empresa</li>
-
+                <li>Fechar contrato</li>
+                <li>Análise de sistemas
                     <ol>
-                        <li>Entrevista com Funcionário</li>
-                        <li>Pesquisa da documentação da empresa</li>
+                        <li>Avaliação da empresa
+                            <ol>
+                                <li>Entrevista com Funcionário</li>
+                                <li>Pesquisa da documentação da empresa</li>
+                            </ol>
+                        </li>
+                        <li>Programação</li>
+                        <li>Aprovação de projeto</li>
                     </ol>
-
-                    <li>Programação</li>
-                    <li>Aprovação do Projeto</li>
-                </ol>
-
-                <li>Treinamento do Usuário</li>
+                </li>
+                <li>Treinamento do usuário</li>
             </ol>
-        </section>
-
-        <section id="data">
-            <h2>Tabela de Dados</h2>
 
             <table>
+                <caption>A Queda de Preço das Três Marcas</caption>
                 <thead>
                     <tr>
-                        <th>Processador</th>
-                        <th>Velocidade (MHz)</th>
-                        <th>Preço de Lançamento</th>
-                        <th>Data de Lançamento</th>
-                        <th>Preço em Agosto/2000</th>
-                        <th>Queda %</th>
+                        <th scope="col">Processador</th>
+                        <!--O scope é um atributo que diz se a célula header é um header de coluna,linha ou um grupo de colunas e linhas.-->
+                        <th scope="col">Velocidade (MHz)</th>
+                        <th scope="col">Preço de Lançamento</th>
+                        <th scope="col">Data de Lançamento</th>
+                        <th scope="col">Preços em Agosto/2000</th>
+                        <th scope="col">Queda %</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>AMD K-6</td>
+                        <th scope="row">AMD K-6</th>
                         <td>200</td>
-                        <td>315</td>
+                        <td>313</td>
                         <td>Abril/97</td>
                         <td>107</td>
                         <td>66</td>
                     </tr>
 
-                    <tr class="row-even">
-                        <td>AMD K-6</td>
+                    <tr>
+                        <th scope="row">AMD K-6</th>
                         <td>233</td>
                         <td>437</td>
                         <td>Maio/97</td>
@@ -81,7 +75,7 @@
                     </tr>
 
                     <tr>
-                        <td>Cyrix 6x86</td>
+                        <th scope="row">Cyrix 6x86</th>
                         <td>200</td>
                         <td>240</td>
                         <td>Maio/97</td>
@@ -89,8 +83,8 @@
                         <td>22</td>
                     </tr>
 
-                    <tr class="row-even">
-                        <td>Cyrix 6x86</td>
+                    <tr>
+                        <th scope="row">Cyrix 6x86</th>
                         <td>233</td>
                         <td>320</td>
                         <td>Maio/97</td>
@@ -99,7 +93,7 @@
                     </tr>
 
                     <tr>
-                        <td>Intel Pentium II</td>
+                        <th scope="row">Intel Pentium ll</th>
                         <td>233</td>
                         <td>636</td>
                         <td>Maio/97</td>
@@ -108,18 +102,30 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-    </main>
+        </main>
+
+    </div>
 
     <footer>
-        <section id="about">
-            <ul>
-                <!-- <a href="https://br.linkedin.com/" target="_blank"><img src="assets/linkedin.png"></a> olhar e ver se precisa mudar -->
-                <!-- <a href="https://github.com/Diego-SLuiz" target="_blank"><img src="assets/github.png"></a> mudar -->
-                <a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png"></a>
-            </ul>
-        </section>
+        <ul class="socials">
+            <li>
+                <a href="https://br.linkedin.com/" target="_blank"><img src=https://www.spiner.com.br/wp-content/uploads/2019/02/midias-sociais-linkedin-icon.png width="70" height="70"></a>
+            </li>
+            
+            <li>
+                <a href="https://github.com/Jheniffer-fernandes" target="_blank"><img src=https://cdn-icons-png.flaticon.com/512/25/25231.png width="55" height="55"></a>
+            </li>
+            
+            <li>
+                <a href="https://www.instagram.com/" target="_blank"><img src=https://www.itabirito.mg.leg.br/imagens/insta.png/image width="55" height="55"></a>
+            </li>
+
+        </ul>
+        
+        <p>Copyright &copy; 2022 Jheniffer</p>
+    
     </footer>
+
 </body>
 
 </html>

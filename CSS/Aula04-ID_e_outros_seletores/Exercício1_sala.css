@@ -2,6 +2,11 @@
 body{
     background-color: antiquewhite;
 }
+h1{
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 #romance{
     background-color: lightcoral;
     font-family: 'Send Flowers', cursive;
@@ -22,9 +27,19 @@ h2{
     text-align: center;
 }
 #terror{
-    background-color: #8B0000;
+    background-color: #ac0505;
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 25px;
     font-style: justify;
     text-align: center;
+}
+footer{
+        color: rgb(0, 0, 0);
+        top: 0px;
+        left: 0px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 50%;
+        text-align: center;
 }
