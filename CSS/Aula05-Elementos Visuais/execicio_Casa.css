@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body{
+    background-image: url(https://images.alphacoders.com/676/thumb-1920-676635.png);
+    /* background-image: url(https://wallpapercave.com/wp/wp1901234.png); */
+    background-size: 101%;
+    margin: 20px;
+}
+main{
+    padding: 3em;
+    color: white;
+}
+ul p{
+    font: 1.4em sans-serif;
+    color: white;
+
+}
+/* p{
+    font: 1.4em;
+} */
+footer{
+
+}
