@@ -1,23 +1,76 @@
 @charset "utf-8";
 
+header{
+    text-align: center;
+    color: beige;
+}
+
 body{
     background-image: url(https://images.alphacoders.com/676/thumb-1920-676635.png);
-    /* background-image: url(https://wallpapercave.com/wp/wp1901234.png); */
-    background-size: 101%;
-    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    /* background-size: 300.5vh; */
+    background-attachment:local;
+    margin: 10px 20px;
+    
 }
+
 main{
     padding: 3em;
-    color: white;
 }
-ul p{
+
+nav a{
+    background-color: rgba(192, 192, 192, 0.212);
+    font: 0.50cm arial;
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    border-bottom: 3px solid;
+}
+
+ul, p{
     font: 1.4em sans-serif;
-    color: white;
-
+    color: black;
+    background-color: rgba(192, 192, 192, 0.212);
 }
-/* p{
-    font: 1.4em;
-} */
-footer{
 
+.dp{
+    color: #46055a;
+}
+
+section.img{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 340px;
+    width: 620px;
+    
+}
+
+figure {
+    width: 620px;
+    padding: 5px;
+    border: 2px solid #1c0358;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.6em;
+    color: #46055a;
+    background-color: rgba(192, 192, 192, 0.212);
+}
+
+footer {
+    color: white;
+    font-size: .60em;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2206648f;
+    text-align: center;
+    position: bottom;
 }
