@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #000035;
+    background-color: antiquewhite;
     color: #555555;
     font-family: 15px 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, inherit ;
     line-height: 1.6em;
@@ -51,10 +51,16 @@ div{
     border-top-style: ridge;
     padding: 20px;
     text-align: center;
+    
 }
 .btn {
     background: rgb(32, 31, 31);
     color: #fff;
     padding: 0.8rem 1.8rem;
-    margin-top: 2rem;
+    margin-top: 9em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 crimson,
+                0 0 10px 0 crimson,
+                0 0 10px 0 crimson inset;
+    
 }

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+* {
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    color: black;
+}
+
+body {
+    background-image: url(http://art.ncoll-central.com/images/decim.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    color: black;
+    margin: 10px 20px;
+}
+
+main {
+    padding: 3em;
+}
+
+nav a {
+    /* background-color: rgba(192, 192, 192, 0.212); */
+    font: 0.90cm 'Rampart One', cursive;
+    font-weight: 750;
+    text-decoration: none;
+    color: rgba(35, 5, 92, 0.829);
+}
+
+h2 {
+    border-bottom: 3px solid rgb(35, 5, 92);
+    text-align: justify;
+}
+
+p {
+    font: 1.2em 'Yomogi', cursive;
+    font-weight: 650;
+    color: black;
+}
+
+section.img {
+    display: flex;
+}
+
+figure {
+    width: 620px;
+    padding: 5px;
+    border: 2px solid #604a94;
+}
+
+footer {
+    color: white;
+    font-size: .80em;
+    font-style: italic;
+    font-family: 'Yomogi', cursive;
+    background-color: #604a94;
+    text-align: center;
+}
