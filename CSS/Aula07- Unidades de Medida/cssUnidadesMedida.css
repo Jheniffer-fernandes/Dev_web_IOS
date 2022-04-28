@@ -13,24 +13,73 @@ body{
 }    
 
 header {
-    height: 5vh;
+    height: 3cm;
     width: 100%;
     position: relative;
     /* background-color: rgb(217, 216, 224); */
-
+    padding: 10pt;
 }
 h1{
     text-align: center;
     font-family: 'Rampart One', cursive; 
-    font-size: 50px;
-}
-#Show{
-    text-align: center;
-    
+    font-size: 3em;
 }
 
-#Show a{
-    text-align: end;
+#Show{
+    text-align: center;
+    font-size: 1.3pc;
+    font-family: 'Yomogi';
+    padding: 5pt;
+}
+.menu a:hover{
+    background:#333;
+    color:#fff;
+    box-shadow: #b92c2c;
+    -moz-box-shadow:0 3px 10px 0 #CCC;
+    -webkit-box-shadow:0 3px 10px 0 #ccc;
+    text-shadow:0px 0px 5px #fff;
+}
+
+#Show .menu a{
+    position: relative;
+    top:25px;
+    left:0;
+    background-color:rgb(92, 7, 7);
+}
+
+.dropbtn {
+    /* background-color: #04AA6D;
+    color: white; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.assistir{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.assistir a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    
+    display: block;
+    text-align: left;
+}
+.assistir a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .assistir {
+    display: block;
+}
+#serie{
+    padding:0%
 }
