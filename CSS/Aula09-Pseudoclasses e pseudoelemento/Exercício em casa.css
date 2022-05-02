@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+body {
+    background-color: #8C867C;
+    color: #f6f7f1;
+    font: normal 16px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin: 2em;
+}
+
+::selection{
+    background-color:#314A20 ;
+    color: white ;
+}
+
+nav{
+    width: 1300px;
+    height: 150px;
+    background-image: url(https://images6.fanpop.com/image/photos/37100000/Shingeki-No-Scenery-shingeki-no-kyojin-attack-on-titan-37157564-500-150.gif);
+    background-size: cover;
+    font-size: 1.7em;
+    margin-bottom: 2em;
+}
+
+h1{
+    text-align: center;
+    color: ivory;
+    padding-top: 1.5em;
+}
+
+.container{
+    padding: 2em;
+    border: 1mm solid black;
+    padding-bottom: 2cm;
+}
+
+.imgbox .boximg img{
+    float: left;
+    transition: 2s;
+    margin-right: 0.7cm;
+    
+}
+
+.imgbox .boximg:hover img{
+    transform: scale(1.1);
+    box-sizing: content-box;
+}
+
+.boximg img{
+    width: 400px;
+    height: 400px; 
+}
+
+p{
+    font-size: 1.2em;
+    padding: 2em;
+    text-align: justify;
+}
+
+.container p::first-line{
+    background-color: #725436;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container a:hover{
+    background-color: #314A20;
+    color: #C1C2BC;
+}
+
+.bloco2{
+    margin-top: 2em;
+    border: 1mm solid black;
+    padding-bottom: 4cm;
+}
+
+.bloco2 img{
+    float: left;
+    margin-right: 3em;
+    padding: 2em;
+}
+
+.bloco2 p{
+    text-decoration: none;
+    padding-top: 1cm;
+}
+
+ul li{
+    font-size: 1.2em;
+    padding-top: 1.2cm;
+    text-align: justify;
+}
+
+.bloco3{
+    margin-top: 0.5cm;
+    border: 1mm solid black;
+    padding-bottom: 4cm;
+}
+
+.not1 img{
+    float: left;
+    padding: 1cm;
+    padding-top: 0.16cm;
+}
+
+.bloco3 .not1 h2{
+    padding-top: 1.5cm;
+}
+
+.not1 p{
+    font-size: 1.2em;
+    padding-top: 1.2cm;
+    text-align: justify;
+}
+
+.btn{
+    border: 1mm solid black;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #314A20;
+    color: #C1C2BC;
+}
+
+.not2 img{
+    margin-top: 0.1cm;
+    margin-left: 0.95cm;
+    margin-right: 1cm;
+    float: left;
+}
+.not2 h2{
+    margin-top: 6.2cm;
+    padding-top: 1.5cm;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.not3 img{
+    margin-top: 0.1cm;
+    margin-left: 0.95cm;
+    margin-right: 1cm;
+    float: left;
+}
+.not3 h2{
+    margin-top: 6.2cm;
+    padding-top: 1.5cm;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.not4 img{
+    margin-top: 0.1cm;
+    margin-left: 0.95cm;
+    margin-right: 1cm;
+    float: left;
+}
+.not4 h2{
+    margin-top: 6.2cm;
+    padding-top: 1.5cm;
+    font-size: 1.2em;
+    text-align: justify;
+}
+.bloco3 p::first-letter{
+    font-size: 70%;
+    color: #533618;
+}
+footer p{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+footer p::before{
+    content: "2022 ©|";
+}
+footer p::after{
+    content: "| Jheniffer.";
+}

@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
 }
 body{
     background-image: url(https://images.fanart.tv/fanart/prodigal-son-5d7f3d44c9217.jpg);
@@ -14,11 +13,12 @@ body{
 
 header {
     height: 3cm;
-    width: 500mm;
+    width: 350mm;
+    text-align: center;
     position: relative;
-    /* background-color: rgb(217, 216, 224); */
     padding: 10pt;
 }
+
 h1{
     text-align: center;
     font-family: 'Rampart One', cursive; 
@@ -32,28 +32,29 @@ h1{
     padding: 5pt;
     font-weight: 700;
 }
+
 .menu a:hover{
     background-color:rgb(0, 0, 0);
 }
 
 #Show .menu a{
     position: relative;
-    padding: 0.3vh;
+    padding: 0.7vh;
     text-decoration: none;
     text-align: center;
     color: white;
     border: 0.2vw solid black;
-    border-radius: 8ch;
+    border-radius: 7ch;
 }
 
 .dropbtn {
     position: relative;
-    padding: 0.3vh;
+    padding: 0.7vh;
     text-decoration: none;
     text-align: center;
     color: white;
     border: 0.2vw solid black;
-    border-radius: 8ch;
+    border-radius: 7ch;
 }
 .dropdown {
     position: relative;
@@ -83,7 +84,7 @@ h1{
     display: block;
 }
 #content{
-    margin-top: 3cm;
+    margin-top: 0.5cm;
     margin-left: 15pt;
     margin-right: 15pt;
 }
@@ -94,23 +95,32 @@ h2{
     border-bottom: 0.05in solid black;
 }
 #serie p{
-    color: ghostwhite;
+    /* background-color: rgba(192, 192, 192, 0.123); */
+    color: white;
     text-align: justify;
     font-size: 1.2em;
     font-family: 'Yomogi';
-    font-weight: bold;
+    font-weight: 800;
     padding-top: 1.5ex;
 }
 #btn{
     position: absolute;
     margin-top: 0.7vmax;
     padding: 0.5vh;
+    border: 0.2vw solid black;
+    border-radius: 1ch;
+    margin-left: 70%;
+}
+#btn .relacionada{
     text-decoration: none;
     text-align: justify;
     color: white;
-    border: 0.2vw solid black;
-    border-radius: 1ch;
-    margin-left: 84%;
+    font-size: 1.2pc; 
+    font-family:'Yomogi';
+    font-weight: 700;
+}
+#btn:hover{
+    background-color:rgb(0, 0, 0);
 }
 footer{
     position: absolute;
