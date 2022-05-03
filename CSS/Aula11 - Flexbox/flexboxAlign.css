@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 body{
-    background-color: rgb(237, 237, 245);
-    color: rgb(34, 51, 51);
+    background-image: url(https://cutewallpaper.org/21/legacies-wallpapers/CW-Legacies-High-Definition-Wallpaper-39155-Baltana.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
 }
 h1{
     text-align: center;
@@ -12,21 +14,24 @@ h3{
 }
 .container {
     display: flex;
+    align-items: baseline;
 }
 
 .container div {
-    border: 1px #ccc solid;
+    border: 1px rgb(255, 255, 255) solid;
     padding: 10px;
 }
 
 .item-box-1 {
-    flex: 3;
+    flex: 4;
     order: 2;
+    
 }
 
 .item-box-2 {
-    flex: 2;
+    flex: 3;
     order: 1;
+    align-self:stretch;
 }
 
 .item-box-3 {
@@ -35,6 +40,6 @@ h3{
 }
 
 .item-box-4 {
-    flex: 3;
-    order: 3;
+    flex: 2;
+    order: 4;
 }
