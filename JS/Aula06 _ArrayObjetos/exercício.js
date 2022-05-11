@@ -47,7 +47,7 @@ const alunos = [
         situacao: 'aprovado'
     },
     ];
-    // console.log(alunos`${nome[0]} ${sobrenome} com notas ${notas} mora na ${aluno.endereco.rua} teve a média ${media}, portanto foi ${situacao}`);
-    console.log('O aluno', alunos[0].nome, alunos[0].sobrenome, 'com notas', alunos[0].nota, 'mora na', alunos[0].endereco.rua,'e teve a média,',  alunos[0].media, 'portanto foi', alunos[0].situacao);
+    
+    console.log('O aluno', alunos[0].nome, alunos[0].sobrenome, 'com notas', alunos[0].nota, 'mora na', alunos[0].endereco.rua,'e teve a média,', alunos[0].media, 'portanto foi', alunos[0].situacao);
     console.log('A aluna', alunos[1].nome, alunos[1].sobrenome, 'com notas', alunos[1].nota, 'mora na', alunos[1].endereco.rua,'e teve a média,', alunos[1].media, 'portanto foi', alunos[1].situacao);
     console.log('O aluno', alunos[2].nome, alunos[2].sobrenome, 'com notas', alunos[2].nota, 'mora na', alunos[2].endereco.rua,'e teve a média,', alunos[2].media, 'portanto foi', alunos[2].situacao);
