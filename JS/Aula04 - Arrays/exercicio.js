@@ -1,3 +1,5 @@
+//Exercício 1
+
 let festa = new Array ('Joaquim', 'José', 'Silva', 'Xavier');
 console.log ('O inicio da festa');
 
@@ -46,3 +48,21 @@ console.clear();
 festa = ['Joaquim', 'José', 'Silvana', 'Zuleica'];
 console.log(festa.length);
 console.log('Ficaram 4 pessoas na festa');
+
+//Exercício 2
+
+let personagens = ['Anne Frank', 'August Pullman', 'Harry Potter', 'Liesel Meminger', 'Percy Jackson'];
+console.log(`Antes: ${personagens}`);
+
+//Primeiro Metódo
+
+personagens = ['Anne Frank', 'August Pullman', 'Harry Potter', 'Liesel Meminger', 'Percy Jackson'];
+let pers = personagens.splice(3);
+console.log(`Depois: ${pers}`);
+
+//Segundo Metódo
+
+personagens = ['Anne Frank', 'August Pullman', 'Harry Potter', 'Liesel Meminger', 'Percy Jackson'];
+console.log(`Antes: ${personagens}`);
+let person = personagens.reverse();
+console.log(`Depois: ${person}`);

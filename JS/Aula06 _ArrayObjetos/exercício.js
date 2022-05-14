@@ -48,6 +48,15 @@ const alunos = [
     },
     ];
     
-    console.log('O aluno', alunos[0].nome, alunos[0].sobrenome, 'com notas', alunos[0].nota, 'mora na', alunos[0].endereco.rua,'e teve a média,', alunos[0].media, 'portanto foi', alunos[0].situacao);
-    console.log('A aluna', alunos[1].nome, alunos[1].sobrenome, 'com notas', alunos[1].nota, 'mora na', alunos[1].endereco.rua,'e teve a média,', alunos[1].media, 'portanto foi', alunos[1].situacao);
-    console.log('O aluno', alunos[2].nome, alunos[2].sobrenome, 'com notas', alunos[2].nota, 'mora na', alunos[2].endereco.rua,'e teve a média,', alunos[2].media, 'portanto foi', alunos[2].situacao);
+    //Médias
+
+    const mediaHarry = [(5+7+9+10)/4];
+    console.log(mediaHarry);
+    const mediaHermione = [(10+10+10+10)/4];
+    console.log(mediaHermione);
+    const mediaRonald = [(4+7+8+9)/4];
+    console.log(mediaRonald);
+
+    console.log('O aluno', alunos[0].nome, alunos[0].sobrenome, 'com notas', alunos[0].nota, 'mora na', alunos[0].endereco.rua,'e teve a média,', mediaHarry, 'portanto foi', alunos[0].situacao);
+    console.log('A aluna', alunos[1].nome, alunos[1].sobrenome, 'com notas', alunos[1].nota, 'mora na', alunos[1].endereco.rua,'e teve a média,', mediaHermione, 'portanto foi', alunos[1].situacao);
+    console.log('O aluno', alunos[2].nome, alunos[2].sobrenome, 'com notas', alunos[2].nota, 'mora na', alunos[2].endereco.rua,'e teve a média,', mediaRonald, 'portanto foi', alunos[2].situacao);
