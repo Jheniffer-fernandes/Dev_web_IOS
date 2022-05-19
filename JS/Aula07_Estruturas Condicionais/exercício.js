@@ -1,13 +1,13 @@
 const colaboradores = [
     {
-    name: 'Aaron',
-    sobrenome: 'Reid',
+    firstName: 'Aaron',
+    lastName: 'Reid',
     salario: 1500,
     vinculo: 'clt'
 },
 {
-    nome: 'Agatha',
-    sobrenome: 'Navarro',
+    firstName: 'Agatha',
+    lastName: 'Navarro',
     salario: 2500,
     vinculo: 'pj'
 },
@@ -33,25 +33,46 @@ const colaboradores = [
 
 const desconto = [7.5, 9, 12, 14];
 
-function inss()
-{
-    por = 0;    
-    if (colaboradores.salario <=1212)
+
+
+function inss(colaborador)
+{ 
+    if (colaborador.vinculo === 'pj')
+    {
+        console.log(`${colaborador.firstName} contribui com 0,00`);
+        return
+    }
+    
+    let por = 0;    
+    
+    if (colaborador.salario <=1212)
     {
     	por = 7.5;
     }
-    else if (colaboradores.salario >= 1213 && colaboradores.salario <= 2427)
+    else if (colaborador.salario >= 1213 && colaborador.salario <= 2427)
     {
-    	por = 9;
+    	por = 9; 
     } 
-    else if(colaboradores.salario >= 2428 && colaboradores.salario <= 3641)
+    else if(colaborador.salario >= 2428 && colaborador.salario <= 3641)
     {
     	por = 12;
     }
-    else (colaboradores.salario >= 3642 && colaboradores.salario <= 7087)
+    else if (colaborador.salario >= 3642 && colaborador.salario <= 7087)
     {
     	por = 14;
     }
-    console.log(colaboradores.salario - ((colaboradores.salario * por)/100));
-    console.log(`${name} colabora ${console.log}`)
+    else 
+    {
+        let resultado1 = 7088 * 14 / 100;
+        console.log(`${colaborador.firstName} colabora ${resultado1}`)
+        return
+    }
+    let resultado = colaborador.salario * por / 100;
+    console.log(`${colaborador.firstName} colabora ${resultado}`)
 }
+
+inss(colaboradores[0]);
+inss(colaboradores[1]);
+inss(colaboradores[2]);
+inss(colaboradores[3]);
+inss(colaboradores[4]);
