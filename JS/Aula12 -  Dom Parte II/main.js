@@ -70,4 +70,8 @@ ul.style.listStyle = 'none';
 
 //Acessar elemento por meio de outro elemento
 
-document.ul.appendChild('item1');
+// document.ul.appendChild('item1');
+
+let teste = document.getElementById('itens');
+let teste1 = teste.getElementsByTagName('li');
+console.log(teste1);
