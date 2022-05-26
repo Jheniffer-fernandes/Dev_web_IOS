@@ -1,7 +1,7 @@
 
 
 const myForm = document.querySelector('#form');
-const nameInput = document.querySelector('#name');
+const nameInput = document.querySelector('#oame');
 const emailInput = document.querySelector('#dNascimento');
 const nascimento = document.querySelector('#email');
 const msg = document.querySelector('.msg');
