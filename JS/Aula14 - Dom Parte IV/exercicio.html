@@ -16,19 +16,31 @@
                 <div class="msg"></div>
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" id="name" required />
+                    <input type="text" id="nome" required />
                 </div>
                 <div>
                     <label for="dNascismento">Data de Nascimento:</label>
-                    <input type="text" id="dNascismento" required/>
+                    <input type="date" id="dNascimento" required/>
                 </div>
                 <div>
                     <label for="email">E-mail:</label>
                     <input type="text" id="email" required />
                 </div>
+                <div>
+                    <label for="cor">Pulseira</label>
+                    <select id="pulseira">
+                        <optgroup label="Menores que 18">
+                            <option value="green">Verde</option>
+                            <option value="yellow">Amarelo</option>
+                        </optgroup>
+                        <optgroup label="Maiores de Idade">
+                            <option value="blue">Azul</option>
+                            <option value="red">Vermelho</option>
+                        </optgroup>
+                    </select> 
+                </div>
                 </form>
-                <input class="btn" type="submit" value="Incluir" />
-                <input class="btn" type="submit" value="Excluir" />
+                <input class="btn" type="submit" value="Incluir" id="incluir" />
             </form>
             <ul id="users"></ul>
         </section>
