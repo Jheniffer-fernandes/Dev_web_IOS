@@ -32,7 +32,7 @@ pessoas[9] = new Pessoa('Lilian',[1960, 01, 30, 5]);
 
 for (var c = 0; c < pessoas.length; c++) {
     
-    function verificandoMes() {
+    function verificandoAniversario() {
         if (pessoas[c].mesAtual < pessoas[c].month) {
             console.log(`${pessoas[c].nome} tem ${pessoas[c].idade()} e ainda não fez aniversário`);
         } else {
@@ -40,5 +40,5 @@ for (var c = 0; c < pessoas.length; c++) {
         }
     }
 
-    verificandoMes();
+    verificandoAniversario();
 };

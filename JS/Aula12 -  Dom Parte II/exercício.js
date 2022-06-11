@@ -10,30 +10,24 @@ for(let i = 0; i < btns.length; i++) {
     btns[i].style.backgroundColor = '#BFBFBF';
 }
 
-// Adicionando elementos 
+let usuario = document.createElement('usuário');
+let usuarioH2 = document.createElement('h2');
+let usuarioP = document.createElement('p');
 
-// Elementos para nome do úsuario
-let divUsuario = document.createElement('div');
-let divUsuarioH2 = document.createElement('h2');
-let divUsuarioP = document.createElement('p');
+document.body.appendChild(usuario);
+usuario.appendChild(usuarioH2);
+usuario.appendChild(usuarioP);
 
-document.body.appendChild(divUsuario);
-divUsuario.appendChild(divUsuarioH2);
-divUsuario.appendChild(divUsuarioP);
-
-// Elementos para foto 
 let img = document.createElement('img');
 let figure = document.createElement('figure');
 document.body.appendChild(figure);
 
-// Elementos para tabuada
-let divTabuada = document.createElement('div');
+let tabuada = document.createElement('tabuada');
 let h2Tabuada = document.createElement('h2');
-document.body.appendChild(divTabuada);
-divTabuada.appendChild(h2Tabuada);
+document.body.appendChild(tabuada);
+tabuada.appendChild(h2Tabuada);
 
-// Criando funções e verificações
-function aparecerImagem() {
+function imagem() {
     document.body.style.backgroundColor = ' #262525';
     document.body.style.color = 'white';
 
@@ -42,13 +36,13 @@ function aparecerImagem() {
 }
 
 function mensagemUsuario() {
-    const mensagem = prompt('Coloque seu nome no campo em branco.');
+    const mensagem = prompt('Coloque seu nome aqui.');
 
     if(mensagem.length == 0) {
-        alert('Você precisa digitar o seu nome!');
+        alert('Digite o seu nome!');
     } else {
-        divUsuarioH2.textContent = 'Mensagens de boas vindas!!';
-        divUsuarioP.textContent = `Seja bem vindo(a) ${mensagem} a nossa academia`;
+        usuarioH2.textContent = 'Mensagens de boas vindas!!';
+        usuarioP.textContent = `Seja bem vindo(a) ${mensagem} a nossa academia`;
     }
 }
 
@@ -62,13 +56,12 @@ function gerarTabuada() {
         
         for(let count = 1; count <= 10; count++) {
             let pTabuada = document.createElement('p');
-            divTabuada.appendChild(pTabuada);
+            tabuada.appendChild(pTabuada);
             pTabuada.innerHTML = (`${numeroUsuario} x ${count} = ${Number(numeroUsuario) * count} <br />`);
         }
     }
 }
 
-// Adicionando eventos nos botões
-btn1.addEventListener('click', aparecerImagem);
+btn1.addEventListener('click', imagem);
 btn2.addEventListener('click', mensagemUsuario);
 btn3.addEventListener('click', gerarTabuada);

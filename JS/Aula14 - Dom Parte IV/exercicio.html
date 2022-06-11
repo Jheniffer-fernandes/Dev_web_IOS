@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <h1>Inscritos</h1>
+            <h1>HallowIF - Ingressos</h1>
         </header>
         <section class="container">
             <form id="form">
@@ -22,25 +22,22 @@
                     <label for="dNascismento">Data de Nascimento:</label>
                     <input type="date" id="dNascimento" required/>
                 </div>
-                <div>
+                <div id="error">
                     <label for="email">E-mail:</label>
                     <input type="text" id="email" required />
                 </div>
                 <div>
                     <label for="cor">Pulseira</label>
                     <select id="pulseira">
-                        <optgroup label="Menores que 18">
                             <option value="green">Verde</option>
                             <option value="yellow">Amarelo</option>
-                        </optgroup>
-                        <optgroup label="Maiores de Idade">
                             <option value="blue">Azul</option>
                             <option value="red">Vermelho</option>
-                        </optgroup>
                     </select> 
                 </div>
                 </form>
                 <input class="btn" type="submit" value="Incluir" id="incluir" />
+                <input class="btn" type="submit" value="Excluir" id="delete" />
             </form>
             <ul id="users"></ul>
         </section>
