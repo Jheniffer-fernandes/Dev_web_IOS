@@ -3,110 +3,85 @@ const bDay = document.querySelector('#dNascimento');
 const email = document.querySelector('#email');
 const userList = document.querySelector('#users');
 const btnIncluir = document.querySelector('#incluir');
+const btnExcluir = document.querySelector('#delete');
 const pulseira = document.querySelector('#pulseira');
-
+const warning =  document.getElementById('#error')
 
 btnIncluir.addEventListener('click', Incluir);
+btnExcluir.addEventListener('click', function() {
+    userList.remove();
+});
 
 function Incluir(e) {
     e.preventDefault();
 
-    let li = document.createElement('li');
-    userList.appendChild(li);
-    li.innerHTML = `${nome.value} | ${bDay.value} | ${email.value}`
-};
+    if (campos() === true) {
+        alert('Preencha os dados');
+    }
 
+    else if (idade() < 18) {
+        alert('Você ainda é menor de idade!')
+    } 
+    else {
+        let li = document.createElement('li');
+        userList.appendChild(li);
+        li.innerHTML = `${nome.value} | ${bDay.value} | ${email.value} | ${pulseira.value}` 
+    }
+} 
 
-
-
-
-
-// function onSubmit(s) {
-//     s.preventDefault();
+const campos = () => {
+    let verificadorNome = nome.value === ''
+    let verificadorEmail = email.value === ''
+ 
+    if(verificadorNome || verificadorEmail) {
+        return true;
+    } 
     
-    // console.log(nameInput.value);
-    
-    // if (nameInput.value === '' || emailInput.value === '') {
-    //     // alert('Por favor, preencha os dados.');
-    //     msg.classList.add('error');
-    //     msg.innerHTML = 'Por favor, preencha os dados.';
-    //     setTimeout(() => msg.remove(), 3000);
-    // } else {
-        
-        // console.log('sucess');
-        
-//         const li = document.createElement('li');
-//         li.appendChild(
-//             document.createTextNode(
-//                 `${nameInput.value} : ${emailInput.value} : ${nascimento.value}`
-//             )
-//         );
-//         userList.appendChild(li);
-        
-//         // Limpa o formulário
-//         nameInput.value = '';
-//         emailInput.value = '';
-//         horario.getElementsByTagName('option')[0].selected = 'selected';
-//         nameInput.focus(); //Coloca o foco no elmento
-//     }
-// }
+    else {
+        return false;
+    }
 
-// function onExclude(e) {
-//     e.preventDefault();
-    
-//     // console.log(nameInput.value);
-    
-//     if (nameInput.value === '' || emailInput.value === '') {
-//         // alert('Por favor, preencha os dados.');
-//         msg.classList.add('error');
-//         msg.innerHTML = 'Por favor, preencha os dados.';
-//         setTimeout(() => msg.remove(), 3000);
-//     } else {
-        
-//         // console.log('sucess');
-        
-//         const li = document.createElement('li');
-//         li.appendChild(
-//             document.createTextNode(
-//                 `${nameInput.value} : ${emailInput.value} : ${horario.value}`
-//             )
-//         );
-//         userList.appendChild(li);
-        
-//         // Limpa o formulário
-//         nameInput.value = '';
-//         emailInput.value = '';
-//         horario.getElementsByTagName('option')[0].selected = 'selected';
-//         nameInput.focus(); //Coloca o foco no elmento
-//     }
-// }
+ }
+ 
+ function verificarEmail() {
+ 
+     let padrao = new RegExp(/.*@.*\..*/i);
+ 
+     if (!padrao.test(email.value)) {
+         // alert('Por favor, insira um e-mail válido.');
+         let erro = document.createElement('p');
+         warning.appendChild(erro);
+ 
+         erro.innerHTML = 'Email invalido';
+         erro.style.color = 'red';
+         setTimeout(() => erro.remove(), 3000);
+     }
+ }
+ 
+ 
+ const idade = () => {
+     let transformarInputObjetoData = new Date(bDay.value);
+     let diaNascimento = transformarInputObjetoData.getUTCDate();
+     let mesNascimento = transformarInputObjetoData.getUTCMonth() + 1;
+     let anoNascimento = transformarInputObjetoData.getFullYear();
+ 
+     let dataAtual = new Date();
+     let diaAtual = dataAtual.getUTCDate();
+     let mesAtual = dataAtual.getUTCMonth() + 1;
+     let anoAtual = dataAtual.getFullYear();
+ 
+     let condicaoNaoFezAniversario = mesAtual < mesNascimento || mesAtual == mesNascimento && diaAtual < diaNascimento
+ 
+     let idade = anoAtual - anoNascimento
+     
+     if (condicaoNaoFezAniversario) {
+         return --idade;
+     }
+ 
+     else {
+         return idade;
+     }
+ }
+ 
 
-// // Validando e-mail
-
-// emailInput.addEventListener('change', (e) => {
-//     let padrao = new RegExp(/.*@.*\..*/i);
-//     if (!padrao.test(emailInput.value)) {
-        
-//         // alert('Por favor, insira um e-mail válido.');
-//         msg_email.classList.add('error');
-//         setTimeout(() => msg.email(), 3000);
-//         msg_email.innerHTML = 'Por favor, insira um e-mail válido.';
-//         setTimeout(() => msg.remove(), 3000);
-
-//     }
-// });
-
-// // Base validar idade
-
-// emailInput.addEventListener('change', (e) => {
-//     let padrao = new RegExp(/.*@.*\..*/i);
-//     if (!padrao.test(emailInput.value)) {
-        
-//         // alert('Por favor, insira um e-mail válido.');
-//         msg_email.classList.add('error');
-//         setTimeout(() => msg.email(), 3000);
-//         msg_email.innerHTML = 'Por favor, insira um e-mail válido.';
-//         setTimeout(() => msg.remove(), 3000);
-
-//     }
-// });
+ 

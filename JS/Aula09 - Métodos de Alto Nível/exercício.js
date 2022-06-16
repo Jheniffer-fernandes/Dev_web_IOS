@@ -12,12 +12,12 @@ const parOuImpar = numeros.forEach((numeros) => {
     }
 });
 
-const numerosMenor18 = numeros.filter((numeros) => {
+const numerosMenores18 = numeros.filter((numeros) => {
     return numeros <= 18
 });
 
 console.log('Numeros menores ou iguais a 18:');
-console.log(numerosMenor18);
+console.log(numerosMenores18);
 
 
 
