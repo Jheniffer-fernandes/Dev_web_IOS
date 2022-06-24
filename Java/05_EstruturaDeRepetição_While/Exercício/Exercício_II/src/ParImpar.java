@@ -5,25 +5,26 @@ public class ParImpar {
 
         Scanner input = new Scanner(System.in);
 
-        int par = 0;
-        int num = 1;
-        int impar = 0;
+        int num, contPar = 0, contImpar = 0;
 
-        while (num >= 0) {
-            System.out.println("Digite um numero");
+        for(int i = 1; i <= 10; i++){
+            System.out.println("Digite o " + i + "º número");
             num = input.nextInt();
 
-            if (num % 2 == 0)
-                par = num;
-            else {
-                if (num % 2 == 1) {
-                    impar = num;
-                }
-            num++;
-                System.out.println("Pares: " + par);
-                System.out.println("Impares " + impar);
+            if(num % 2 == 0){
+                contPar++;
+            }
+
+            // para informar números impares
+
+            if(num % 2 == 1){
+                contImpar++;
+            }
+
         }
-        }
-        input.close();
+
+        System.out.println("Foram digitados " + contPar + " números pares \n");
+        System.out.println("E " + contImpar + " números ímpares");
+
     }
 }

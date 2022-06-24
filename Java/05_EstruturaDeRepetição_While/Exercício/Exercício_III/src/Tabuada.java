@@ -8,7 +8,7 @@ public class Tabuada {
         int contador = 1;
         int tabuada;
 
-        System.out.println("digite o valor da tabuada:");
+        System.out.println("Digite um número:");
         tabuada = input.nextInt();
 
         while (contador <= 10) {
