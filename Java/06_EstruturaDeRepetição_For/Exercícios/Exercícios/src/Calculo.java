@@ -22,7 +22,7 @@ public class Calculo {
             System.out.println("O número é par!");
         } else {
 
-                System.out.println("O número é ímpar!");
+            System.out.println("O número é ímpar!");
         }
         System.out.println(Math.round(Math.sqrt(i)));
 
