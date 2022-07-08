@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import BoasVindas from './Components/BoasVindas';
+import Sobre from './Components/Sobre'
 
+const nomePessoa = prompt('Qual é o seu nome?')
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BoasVindas nome= {nomePessoa} />
+      <Sobre />
     </div>
   );
 }
