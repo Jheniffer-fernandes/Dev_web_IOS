@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function Form(props) {
+  
   const [name, setName] = useState("");
 
   function handleSubmit(e) {
@@ -15,21 +16,25 @@ function Form(props) {
   }
 
   return (
+    
     <form className="todoform" onSubmit={handleSubmit}>
+
       <div className="flex">
+
         <input
           type="text"
           id="newtodobox"
           className="todoinput"
           name="text"
           autoComplete="off"
-          placeholder="Nova Tarefa..."
+          placeholder="New Task..."
           value={name}
-          onChange={handleChange}
-        />
+          onChange={handleChange}/>
+
         <button type="submit" className="submitButton btn">
-          Adicionar
+          Add
         </button>
+        
       </div>
     </form>
   );
