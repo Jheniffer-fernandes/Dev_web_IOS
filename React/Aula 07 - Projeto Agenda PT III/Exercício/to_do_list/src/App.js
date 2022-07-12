@@ -7,6 +7,7 @@ import React, { useEffect, useState } from "react";
 import { nanoid } from "nanoid";
 
 function App(props) {
+
   const [tasks, setTasks] = useState(props.tasks);
   const [filter, setFilter] = useState("All");
 
@@ -56,8 +57,7 @@ function App(props) {
         key={task.id}
         toggleTaskCompleted={toggleTaskCompleted}
         deleteTask={deleteTask}
-        editTask={editTask}
-      />
+        editTask={editTask}/>
     ));
 
   const filterList = props.FILTER_NAMES.map((name) => (
@@ -65,8 +65,7 @@ function App(props) {
       key={name}
       name={name}
       isPressed={name === filter}
-      setFilter={setFilter}
-    />
+      setFilter={setFilter}/>
   ));
 
   const countString = `${tasks.length} ${
@@ -88,8 +87,7 @@ function App(props) {
       <div
         role="list"
         className="todo-list stack-large stack-exception"
-        aria-labelledby="list-heading"
-      >
+        aria-labelledby="list-heading">
         {taskList}
       </div>
     </div>

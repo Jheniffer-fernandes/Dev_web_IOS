@@ -25,8 +25,7 @@ root.render(
     <App
       tasks={todoDetails}
       FILTER_NAMES={FILTER_NAMES}
-      FILTER_MAP={FILTER_MAP}
-    />
+      FILTER_MAP={FILTER_MAP}/>
   </React.StrictMode>
 );
 
