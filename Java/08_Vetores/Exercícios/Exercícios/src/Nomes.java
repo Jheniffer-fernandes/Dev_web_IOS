@@ -3,21 +3,24 @@ import java.util.Scanner;
 public class Nomes {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+        String[] nomes = new String[5];
 
-        // declaração de vetor
-        String[] nome = new String[5];
+        System.out.println("Escreva 5 nomes: ");
 
-
-        // entrada de dados
-        for(String nome = 0; nome < nome.length; i++){
-            System.out.println("Digite um número");
-            vetor[i] = ent.nextInt();
+        for (int count = 0; count < nomes.length; count++) {
+            nomes[count] = input.nextLine();
         }
 
-        // saída de dados -- inversa
-        for(int i = vetor.length-1; i >= 0; i--){
-            System.out.println(vetor[i]);
+        for (int count = 0; count < nomes.length; count++) {
+            System.out.println("Normal: " + nomes[count]);
         }
 
+        System.out.println("");
+
+        for (int count = nomes.length - 1; count >= 0; count--) {
+            System.out.println("Inverso: " + nomes[count]);
+        }
+
+        input.close();
     }
 }
